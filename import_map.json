@@ -1,5 +1,7 @@
 {
   "imports": {
+    "deco-sites/maya-capital/": "./",
+
     "deco-sites/links/": "./",
     "$store/": "./",
     "$live/": "https://denopkg.com/deco-cx/live@1.19.9/",
