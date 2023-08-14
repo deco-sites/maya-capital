@@ -39,6 +39,27 @@ function GlobalTags() {
           __html: `
           /* latin-ext */
           @font-face {
+            font-family: 'Posteramatext';
+            src: url('https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b74c1283e5d8c307d72b_PosteramaText-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: auto;
+          }
+          @font-face {
+            font-family: 'Posteramatext';
+            src: url('https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b74d3be192a8f27be7ae_PosteramaText-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: auto;
+          }
+          @font-face {
+            font-family: 'Posteramatext';
+            src: url('https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b74d1283e5575407d72c_PosteramaText-SemiBold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+            font-display: auto;
+          }
+          @font-face {
             font-family: 'Albert Sans';
             font-style: normal;
             font-weight: 400;

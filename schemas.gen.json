@@ -80,6 +80,7 @@
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
               "deco-sites/maya-capital/sections/Links.tsx",
+              "deco-sites/maya-capital/sections/Portifolio.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configNuvemShop.tsx",
@@ -8103,6 +8104,27 @@
       "required": [],
       "title": "deco-sites/maya-capital/components/ui/Links.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub Title"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maya-capital/sections/Portifolio.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
       "properties": {
@@ -10684,6 +10706,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=": {
+      "title": "deco-sites/maya-capital/sections/Portifolio.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/Portifolio.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/Portifolio.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA==": {
       "title": "deco-sites/std/sections/Analytics.tsx",
       "type": "object",
@@ -11887,6 +11930,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvTGlua3MudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
