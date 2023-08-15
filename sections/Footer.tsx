@@ -55,7 +55,7 @@ export default function Footer(props: Props) {
       <div
         className={`flex justify-between align-baseline lg:order-1 lg:flex-col lg:gap-[40px]`}
       >
-        <Image src={footerLogo || ``} width={80} className={`lg:w-[100px]`}/>
+        <Image src={footerLogo || ``} width={80} className={`lg:w-[100px]`} />
         <p
           className={`w-fit h-fit font-["Posteramatext"] text-[14px] font-light flex items-end`}
         >

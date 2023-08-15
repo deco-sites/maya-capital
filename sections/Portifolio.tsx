@@ -61,7 +61,10 @@ export default function Portifolio(props: Props) {
       </div>
 
       <div className={`mt-[60px]`}>
-        <a className={`flex flex-col lg:items-center lg:flex-row lg:gap-[20px] `} href={morePortifolioHref}>
+        <a
+          className={`flex flex-col lg:items-center lg:flex-row lg:gap-[20px] `}
+          href={morePortifolioHref}
+        >
           <p
             className={`uppercase text-[12px] font-bold font-["Posteramatext"] tracking-[2px] text-[#434343] lg:text-[16px] `}
           >

@@ -63,7 +63,7 @@ export default function Approach(props: Props) {
           <p
             className={`text-left text-[14px] font-light font-["Posteramatext"] text-[#333] lg:text-[30px] lg:ml-[-100px]`}
           >
-            Inspire future generations  
+            Inspire future generations
           </p>
         </div>
         <div className={`flex justify-center`}>
@@ -104,15 +104,25 @@ export default function Approach(props: Props) {
         </div>
       </div>
 
-      <a href={`https://www.maya.capital/approach`} className={`mt-[35px] lg:mt-[95px] flex gap-[20px] items-center`}><p className={`text-[#002fa7] tracking-[2px] cursor-pointer text-[12px] lg:text-[16px] font-semibold uppercase font-["Posteramatext"]`}>Learn More</p><div
-            className={` flex align-center justify-center bg-[#feb13f] w-[18px] h-[18px] rounded-full lg:w-[28px] lg:h-[28px] items-center`}
-          >
-            <Image
-              src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b9427177dc81cad32c68_right-arrow.png`}
-              width={16}
-              className={`w-[16px] h-[9px] lg:w-[17px] lg:h-[10px]`}
-            />
-          </div></a>
+      <a
+        href={`https://www.maya.capital/approach`}
+        className={`mt-[35px] lg:mt-[95px] flex gap-[20px] items-center`}
+      >
+        <p
+          className={`text-[#002fa7] tracking-[2px] cursor-pointer text-[12px] lg:text-[16px] font-semibold uppercase font-["Posteramatext"]`}
+        >
+          Learn More
+        </p>
+        <div
+          className={` flex align-center justify-center bg-[#feb13f] w-[18px] h-[18px] rounded-full lg:w-[28px] lg:h-[28px] items-center`}
+        >
+          <Image
+            src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b9427177dc81cad32c68_right-arrow.png`}
+            width={16}
+            className={`w-[16px] h-[9px] lg:w-[17px] lg:h-[10px]`}
+          />
+        </div>
+      </a>
     </section>
   );
 }
