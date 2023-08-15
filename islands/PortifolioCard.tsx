@@ -18,7 +18,7 @@ export default function PortifolioCard(props: CardInfo) {
         onClick={() => {
           toggleVisibility();
         }}
-        className={`px-[20px] py-[50px]  lg:flex lg:justify-center `}
+        className={`px-[20px] py-[30px]  lg:flex lg:justify-center `}
       >
         <Image src={image || ``} width={88} class={`h-auto`} />
       </div>
@@ -26,7 +26,7 @@ export default function PortifolioCard(props: CardInfo) {
         className={`${
           !openDialog
             ? `z-[-1] h-0 w-0 opacity-0 overflow-hidden `
-            : `lg:bg-[rgb(255,255,255,0.5)] fixed top-0 left-0 bg-white w-[100vw] h-[100vh] px-[35px] py-[135px] z-50 lg:flex lg:justify-center lg:items-center transition duration-300 ease-in-out`
+            : `lg:bg-[rgb(255,255,255,0.5)] overflow-auto fixed py-[55px] top-0 left-0 bg-white w-[100vw] h-[100vh] px-[35px] lg:py-[135px] z-50 lg:flex lg:justify-center lg:items-center transition duration-300 ease-in-out`
         }`}
       >
         <div
@@ -35,7 +35,7 @@ export default function PortifolioCard(props: CardInfo) {
           <div
             className={`cursor-pointer justify-between relative px-[15px] mb-[40px] flex `}
           >
-            <Image src={image || ``} width={100} />
+            <Image src={image || ``} width={100} className={`lg:w-[230px]`} />
             <Image
               className={`absolute top-[-45px] right-[0px]`}
               src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5cab6e021aed369c9b738cb4_modal-close-button.png `}
@@ -51,7 +51,7 @@ export default function PortifolioCard(props: CardInfo) {
             {description}
           </p>
 
-          <div className={`lg:grid lg:grid-cols-2`}>
+          <div className={`lg:grid lg:grid-cols-2 lg:gap-[25px]`}>
             <div className={`mb-[20px]`}>
               <p
                 className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}

@@ -23,15 +23,15 @@ export default function Footer(props: Props) {
 
   return (
     <footer
-      className={`bg-[#002FA7] px-[14px] py-[45px] text-white px-[25px] lg:flex lg:items-start lg:justify-between lg:py-[45px] lg:px-[100px]`}
+      className={`bg-[#002FA7] py-[45px] text-white px-[29px] lg:flex lg:items-start lg:justify-between lg:py-[45px] lg:px-[100px]`}
     >
       <div
-        className={`flex flex-col justify-center items-center gap-[15px] md:flex-row lg:order-2`}
+        className={`flex flex-col justify-center items-center gap-[15px] mb-[43px] md:flex-row lg:order-2 lg:gap-[30px] lg:ml-[-35px]`}
       >
         {links?.map((item) => {
           return (
             <a
-              className={`font-["Posteramatext"] font-[14px] font-light`}
+              className={`font-["Posteramatext"] text-[14px] font-light`}
               href={item?.href}
             >
               {item?.label}
@@ -41,7 +41,7 @@ export default function Footer(props: Props) {
       </div>
 
       <div
-        className={`flex justify-center my-[26px] gap-[30px] lg:order-3 lg:my-[0px]`}
+        className={`flex justify-center my-[40px] gap-[20px] lg:order-3 lg:my-[0px] lg:gap-[25px]`}
       >
         {socialInformation?.map((item) => {
           return (
@@ -55,11 +55,11 @@ export default function Footer(props: Props) {
       <div
         className={`flex justify-between align-baseline lg:order-1 lg:flex-col lg:gap-[40px]`}
       >
-        <Image src={footerLogo || ``} width={80} />
+        <Image src={footerLogo || ``} width={80} className={`lg:w-[100px]`} />
         <p
-          className={`w-fit h-fit font-["Posteramatext"] text-[14px] font-light`}
+          className={`w-fit h-fit font-["Posteramatext"] text-[14px] font-light flex items-end`}
         >
-          ©{copyrightText}
+          © {copyrightText}
         </p>
       </div>
     </footer>
