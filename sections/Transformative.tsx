@@ -1,36 +1,47 @@
 export interface Props {
-    title: string;
-    description: string;
-    link: string;
+  title: string;
+  description: string;
+  link: string;
 }
 
 export default function transformative(props: Props) {
-    return (
-        <div id="scrollHere" className={`flex flex-row xl:p-[14px] min-h-[60vh]`}>
-            <div className={`hidden xl:block w-[30%] px-[100px] pt-[15vw] bg-[#f9fafc]`}>
-
-            </div>
-            <div className={`max-w-[1050px] m-[5px]`}
-            style={`
+  return (
+    <div id="scrollHere" className={`flex flex-row xl:p-[14px] min-h-[60vh]`}>
+      <div
+        className={`hidden xl:block w-[30%] px-[100px] pt-[15vw] bg-[#f9fafc]`}
+      >
+      </div>
+      <div
+        className={`max-w-[1050px] m-[5px]`}
+        style={`
             background-image: linear-gradient(rgba(0, 47, 167, .82), rgba(0, 47, 167, .82)), url(/bg-blue.jpg);
             background-size: auto, cover;
             `}
+      >
+        <div className={`xl:px-[100px] py-[120px] px-[15px]`}>
+          <h3
+            className={`text-[#feb13f] font-bold xl:text-[80px] text-[35px] mb-[20px] mt-[10px] max-w-[860px] leading-[1.1em]`}
+          >
+            {props.title}
+          </h3>
+          <p className={`max-w-[440px] text-[14px] xl:text-[16px] text-white`}>
+            {props.description}
+          </p>
+          <a
+            className={`flex flex-row w-fit xl:mt-[60px] mt-[40px] text-[14px] xl:text-[16px] items-center uppercase tracking-[2px] text-white font-bold`}
+            href={props.link}
+          >
+            dicover maya capital
+            <div
+              className={`ml-[20px] flex align-center justify-center bg-[#feb13f] rounded-full p-[4px] xl:p-[7px]`}
             >
-                <div className={`xl:px-[100px] py-[120px] px-[15px]`}>
-                    <h3 className={`text-[#feb13f] font-bold xl:text-[80px] text-[35px] mb-[20px] mt-[10px] max-w-[860px] leading-[1.1em]`}>{props.title}</h3>
-                    <p className={`max-w-[440px] text-[14px] xl:text-[16px] text-white`}>{props.description}</p>
-                    <a className={`flex flex-row w-fit xl:mt-[60px] mt-[40px] text-[14px] xl:text-[16px] items-center uppercase tracking-[2px] text-white font-bold`} href={props.link}>
-                        dicover maya capital
-                        <div
-                        className={`ml-[20px] flex align-center justify-center bg-[#feb13f] rounded-full p-[4px] xl:p-[7px]`}
-                        >
-                            <svg width={18} height={16} className={`rotate-[180deg]`}>
-                                <use href="/sprites.svg#arrow-custom"></use>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+              <svg width={18} height={16} className={`rotate-[180deg]`}>
+                <use href="/sprites.svg#arrow-custom"></use>
+              </svg>
             </div>
+          </a>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
