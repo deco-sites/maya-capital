@@ -27,7 +27,9 @@ export default function transformative(props: Props) {
           >
             {props.title}
           </h3>
-          <p className={`max-w-[440px] text-[14px] xl:text-[16px] text-white font-light`}>
+          <p
+            className={`max-w-[440px] text-[14px] xl:text-[16px] text-white font-light`}
+          >
             {props.description}
           </p>
           <a
