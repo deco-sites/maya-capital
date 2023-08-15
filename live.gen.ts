@@ -4,6 +4,7 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/PortifolioCard.tsx";
 import * as $$$$$$$$0 from "./sections/Links.tsx";
 import * as $$$$$$$$1 from "./sections/Portifolio.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
@@ -148,6 +149,9 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/live/workflows/run.ts": $live_workflows,
   },
+  "islands": {
+    "./islands/PortifolioCard.tsx": $$$$$0,
+  },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
     "$live/sections/EmptySection.tsx": i2$$$$$1,
@@ -282,7 +286,6 @@ const manifest = {
     "deco-sites/std/accounts/vtex.ts": i2$$4,
     "deco-sites/std/accounts/yourViews.ts": i2$$5,
   },
-  "islands": {},
   "baseUrl": import.meta.url,
 };
 

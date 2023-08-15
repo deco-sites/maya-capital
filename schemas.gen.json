@@ -65,6 +65,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/PortifolioCard.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -7313,6 +7314,57 @@
       ],
       "title": "deco-sites/std/packs/vtex/loaders/wishlist.ts@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
+      "type": "string",
+      "format": "image-uri",
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo": {
+      "type": "object",
+      "properties": {
+        "website": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Website"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "founder": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Founder"
+        },
+        "sector": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sector"
+        },
+        "coinvestors": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Coinvestors"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maya-capital/sections/Portifolio.tsx@CardInfo"
+    },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
       "type": "object",
       "properties": {
@@ -7695,11 +7747,6 @@
         "sections"
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
-      "type": "string",
-      "format": "image-uri",
-      "title": "Image"
     },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvY29tcG9uZW50cy91aS9MaW5rcy50c3g=@Link": {
       "type": "object",
@@ -8104,6 +8151,13 @@
       "required": [],
       "title": "deco-sites/maya-capital/components/ui/Links.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo"
+      },
+      "title": "CardInfo[]"
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -8120,6 +8174,10 @@
             "null"
           ],
           "title": "Title"
+        },
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo[]",
+          "title": "Cards"
         }
       },
       "required": [],
@@ -10397,6 +10455,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1BvcnRpZm9saW9DYXJkLnRzeA==": {
+      "title": "./islands/PortifolioCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/PortifolioCard.tsx"
+          ],
+          "default": "./islands/PortifolioCard.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "Private Fresh Page",
       "description": "Useful for pages under development.",
@@ -11862,7 +11941,14 @@
     },
     "islands": {
       "title": "islands",
-      "anyOf": []
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1BvcnRpZm9saW9DYXJkLnRzeA=="
+        }
+      ]
     },
     "handlers": {
       "title": "handlers",
