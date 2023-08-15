@@ -61,7 +61,21 @@ export default function Portifolio(props: Props) {
       </div>
 
       <div className={`mt-[60px]`}>
-        <a className={`flex gap-[5px] `} href={morePortifolioHref}><p className={`uppercase text-[12px] font-bold font-["Posteramatext"] tracking-[2px] text-[#434343] lg:text-[16px] `}>Discover our portifolio companies</p> <div className={` flex align-center justify-center bg-[#feb13f] w-[18px] h-[18px] rounded-full`}><Image src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b9427177dc81cad32c68_right-arrow.png`} width={16}/></div> </a>
+        <a className={`flex gap-[5px] `} href={morePortifolioHref}>
+          <p
+            className={`uppercase text-[12px] font-bold font-["Posteramatext"] tracking-[2px] text-[#434343] lg:text-[16px] `}
+          >
+            Discover our portifolio companies
+          </p>{" "}
+          <div
+            className={` flex align-center justify-center bg-[#feb13f] w-[18px] h-[18px] rounded-full`}
+          >
+            <Image
+              src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b9427177dc81cad32c68_right-arrow.png`}
+              width={16}
+            />
+          </div>
+        </a>
       </div>
     </section>
   );
