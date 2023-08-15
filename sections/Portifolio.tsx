@@ -20,7 +20,7 @@ export default function Portifolio(props: Props) {
 
   return (
     <section
-      className={`py-[120px] px-[30px] background-[#f9fafc] lg:px-[115px]`}
+      className={`py-[120px] px-[30px] bg-[#f9fafc] lg:px-[115px]`}
     >
       <p
         className={`font-["Posteramatext"] text-[#002fa7] text-[10px] uppercase tracking-[4px] lg:text-[16px] lg:tracking-[6px]`}
@@ -42,7 +42,7 @@ export default function Portifolio(props: Props) {
       </div>
 
       <div
-        className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:max-w-[1200px]`}
+        className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:max-w-[1200px] lg:gap-[60px]`}
       >
         {cards?.map((item) => {
           return (

@@ -27,7 +27,7 @@ export default function PortifolioCard(props: CardInfo) {
         onClick={() => {
           toggleVisibility();
         }}
-        className={`px-[20px] py-[50px]`}
+        className={`px-[20px] py-[50px] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] lg:flex lg:justify-center`}
       >
         <Image src={image || ``} width={88} class={`h-auto`} />
       </div>
@@ -42,7 +42,7 @@ export default function PortifolioCard(props: CardInfo) {
           className={`lg:px-[60px] lg:py-[100px] lg:max-w-[800px] lg:bg-white lg:border-2 lg:border-[#f5f5f5] rounded-lg`}
         >
           <div
-            className={`cursor-pointer flex justify-between relative px-[15px] mb-[40px]`}
+            className={`cursor-pointer flex justify-between relative px-[15px] mb-[40px] flex `}
           >
             <Image src={image || ``} width={100} />
             <Image
