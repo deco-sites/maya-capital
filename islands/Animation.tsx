@@ -7,19 +7,21 @@ export default function Animation() {
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setFadeInIndex((prevIndex) => {
-        if (prevIndex < 8) {
-          return prevIndex + 1;
-        }
-        clearInterval(interval);
-        return prevIndex;
-      });
-    }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
-
-    return () => {
-      clearInterval(interval);
-    };
+    if (hasEnteredViewport == true){
+        const interval = setInterval(() => {
+            setFadeInIndex((prevIndex) => {
+              if (prevIndex < 8) {
+                return prevIndex + 1;
+              }
+              clearInterval(interval);
+              return prevIndex;
+            });
+          }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
+      
+          return () => {
+            clearInterval(interval);
+          };   
+    }
   }, [hasEnteredViewport]);
 
   const handleScroll = () => {
@@ -29,7 +31,6 @@ export default function Animation() {
         rect.top >= 0 &&
         rect.bottom <= window.innerHeight
       ) {
-        console.log("Div is in the viewport!");
         setHasEnteredViewport(true);
       }
     }
