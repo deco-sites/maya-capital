@@ -65,6 +65,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/Animation.tsx",
               "./islands/MenuButtonSideToSide.tsx",
               "./islands/PortifolioCard.tsx",
               "./islands/ScrollButton.tsx",
@@ -10652,6 +10653,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0FuaW1hdGlvbi50c3g=": {
+      "title": "./islands/Animation.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Animation.tsx"
+          ],
+          "default": "./islands/Animation.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL01lbnVCdXR0b25TaWRlVG9TaWRlLnRzeA==": {
       "title": "./islands/MenuButtonSideToSide.tsx",
       "type": "object",
@@ -12283,6 +12300,9 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0FuaW1hdGlvbi50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL01lbnVCdXR0b25TaWRlVG9TaWRlLnRzeA=="

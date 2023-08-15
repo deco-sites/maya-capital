@@ -138,6 +138,25 @@ function GlobalTags() {
           body {
             font-family: Posteramatext;
           }
+          .fade-in {
+            animation: fade-in 0.5s ease-in-out forwards;
+          }
+          .fade-in {
+            opacity: 0;
+            animation: fadeAnimation 1s ease forwards;
+            display: flex !important;
+          }
+          
+          @keyframes fadeAnimation {
+            to {
+              opacity: 1;
+            }
+          }
+
+          .hide{
+            display: none;
+          }
+          
       `,
         }}
       />

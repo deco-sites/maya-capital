@@ -4,9 +4,10 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/MenuButtonSideToSide.tsx";
-import * as $$$$$1 from "./islands/PortifolioCard.tsx";
-import * as $$$$$2 from "./islands/ScrollButton.tsx";
+import * as $$$$$0 from "./islands/Animation.tsx";
+import * as $$$$$1 from "./islands/MenuButtonSideToSide.tsx";
+import * as $$$$$2 from "./islands/PortifolioCard.tsx";
+import * as $$$$$3 from "./islands/ScrollButton.tsx";
 import * as $$$$$$$$0 from "./sections/Approach.tsx";
 import * as $$$$$$$$1 from "./sections/DreamBigger.tsx";
 import * as $$$$$$$$2 from "./sections/Footer.tsx";
@@ -157,9 +158,10 @@ const manifest = {
     "./routes/live/workflows/run.ts": $live_workflows,
   },
   "islands": {
-    "./islands/MenuButtonSideToSide.tsx": $$$$$0,
-    "./islands/PortifolioCard.tsx": $$$$$1,
-    "./islands/ScrollButton.tsx": $$$$$2,
+    "./islands/Animation.tsx": $$$$$0,
+    "./islands/MenuButtonSideToSide.tsx": $$$$$1,
+    "./islands/PortifolioCard.tsx": $$$$$2,
+    "./islands/ScrollButton.tsx": $$$$$3,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
