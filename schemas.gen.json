@@ -67,6 +67,7 @@
               "deco-sites/std/loaders/vtex/wishlist.ts",
               "./islands/MenuButtonSideToSide.tsx",
               "./islands/PortifolioCard.tsx",
+              "./islands/ScrollButton.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
               "$live/handlers/proxy.ts",
@@ -82,10 +83,12 @@
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
               "deco-sites/maya-capital/sections/Approach.tsx",
+              "deco-sites/maya-capital/sections/DreamBigger.tsx",
               "deco-sites/maya-capital/sections/Footer.tsx",
               "deco-sites/maya-capital/sections/Header.tsx",
               "deco-sites/maya-capital/sections/Links.tsx",
               "deco-sites/maya-capital/sections/Portifolio.tsx",
+              "deco-sites/maya-capital/sections/Transformative.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
               "deco-sites/std/sections/configNuvemShop.tsx",
@@ -7815,6 +7818,24 @@
       "required": [],
       "title": "deco-sites/maya-capital/sections/Approach.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRHJlYW1CaWdnZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "title": "deco-sites/maya-capital/sections/DreamBigger.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo": {
       "type": "object",
       "properties": {
@@ -8335,6 +8356,29 @@
       },
       "required": [],
       "title": "deco-sites/maya-capital/sections/Portifolio.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvVHJhbnNmb3JtYXRpdmUudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "link"
+      ],
+      "title": "deco-sites/maya-capital/sections/Transformative.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
@@ -10650,6 +10694,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1Njcm9sbEJ1dHRvbi50c3g=": {
+      "title": "./islands/ScrollButton.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ScrollButton.tsx"
+          ],
+          "default": "./islands/ScrollButton.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZGV2UGFnZS50cw==": {
       "title": "Private Fresh Page",
       "description": "Useful for pages under development.",
@@ -10959,6 +11019,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRHJlYW1CaWdnZXIudHN4": {
+      "title": "deco-sites/maya-capital/sections/DreamBigger.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRHJlYW1CaWdnZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/DreamBigger.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/DreamBigger.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/maya-capital/sections/Footer.tsx",
       "type": "object",
@@ -11040,6 +11121,27 @@
             "deco-sites/maya-capital/sections/Portifolio.tsx"
           ],
           "default": "deco-sites/maya-capital/sections/Portifolio.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvVHJhbnNmb3JtYXRpdmUudHN4": {
+      "title": "deco-sites/maya-capital/sections/Transformative.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvVHJhbnNmb3JtYXRpdmUudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/Transformative.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/Transformative.tsx"
         }
       }
     },
@@ -12187,6 +12289,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1BvcnRpZm9saW9DYXJkLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1Njcm9sbEJ1dHRvbi50c3g="
         }
       ]
     },
@@ -12258,6 +12363,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvQXBwcm9hY2gudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRHJlYW1CaWdnZXIudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
         },
         {
@@ -12268,6 +12376,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvVHJhbnNmb3JtYXRpdmUudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvQW5hbHl0aWNzLnRzeA=="
