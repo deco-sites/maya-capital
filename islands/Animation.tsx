@@ -7,20 +7,20 @@ export default function Animation() {
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
   useEffect(() => {
-    if (hasEnteredViewport == true){
-        const interval = setInterval(() => {
-            setFadeInIndex((prevIndex) => {
-              if (prevIndex < 8) {
-                return prevIndex + 1;
-              }
-              clearInterval(interval);
-              return prevIndex;
-            });
-          }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
-      
-          return () => {
-            clearInterval(interval);
-          };   
+    if (hasEnteredViewport == true) {
+      const interval = setInterval(() => {
+        setFadeInIndex((prevIndex) => {
+          if (prevIndex < 8) {
+            return prevIndex + 1;
+          }
+          clearInterval(interval);
+          return prevIndex;
+        });
+      }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
+
+      return () => {
+        clearInterval(interval);
+      };
     }
   }, [hasEnteredViewport]);
 
