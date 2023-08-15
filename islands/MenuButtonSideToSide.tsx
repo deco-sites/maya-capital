@@ -40,7 +40,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
           }`}
         >
           <div
-            className="absolute top-0 right-0 z-50 flex items-center justify-center w-12 h-12 text-gray-500 transition duration-150 ease-in-out rounded-full focus:outline-none focus:shadow-outline hover:text-gray-900"
+            className="absolute top-0 lg:right-[68%] right-0 z-50 flex items-center justify-center w-12 h-12 text-gray-500 transition duration-150 ease-in-out rounded-full focus:outline-none focus:shadow-outline hover:text-gray-900"
             aria-label="Menu"
             onClick={() => setIsOpen(!isOpen)}
           >
