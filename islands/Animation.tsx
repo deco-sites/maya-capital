@@ -6,8 +6,6 @@ export default function Animation() {
   const [fadeInIndex, setFadeInIndex] = useState(0);
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
-
-
   useEffect(() => {
     const interval = setInterval(() => {
       setFadeInIndex((prevIndex) => {
