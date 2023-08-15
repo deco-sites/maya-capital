@@ -71,7 +71,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
                       );
                     })}
                     <div
-                      className={`flex flex-row w-fit gap-[25px] absolute top-auto bottom-0 left-0 right-0 mx-[35px] mb-[35px]`}
+                      className={`flex flex-row w-fit gap-[20px] absolute top-auto bottom-0 left-0 right-0 mx-[35px] mb-[35px]`}
                     >
                       <a
                         href="https://www.linkedin.com/company/mayacapital/"

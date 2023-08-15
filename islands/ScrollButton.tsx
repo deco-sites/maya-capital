@@ -8,7 +8,7 @@ export default function ScrollButton() {
 
   return (
     <div
-      className="scroll-button flex flex-row items-center uppercase mt-[60px] tracking-[2px] font-bold xl:text-[16px] text-[14px]"
+      className="scroll-button flex flex-row items-center uppercase mt-[90px] tracking-[2px] font-bold xl:text-[16px] text-[14px]"
       onClick={scrollTo}
     >
       Discover more{" "}
