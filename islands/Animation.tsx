@@ -6,6 +6,8 @@ export default function Animation() {
   const [fadeInIndex, setFadeInIndex] = useState(0);
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
+
+
   useEffect(() => {
     const interval = setInterval(() => {
       setFadeInIndex((prevIndex) => {
@@ -25,12 +27,10 @@ export default function Animation() {
   const handleScroll = () => {
     if (divRef.current) {
       const rect = divRef.current.getBoundingClientRect();
-      // Check if the div is in the viewport
       if (
         rect.top >= 0 &&
         rect.bottom <= window.innerHeight
       ) {
-        // Run your function when the div is in the viewport
         console.log("Div is in the viewport!");
         setHasEnteredViewport(true);
       }
@@ -38,11 +38,9 @@ export default function Animation() {
   };
 
   useEffect(() => {
-    // Add a scroll event listener to the window
     // deno-lint-ignore no-window-prefix
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       // deno-lint-ignore no-window-prefix
       window.removeEventListener("scroll", handleScroll);
