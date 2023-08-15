@@ -2,17 +2,6 @@ import { useState } from "preact/compat";
 import Image from "deco-sites/std/components/Image.tsx";
 import { CardInfo } from "../sections/Portifolio.tsx";
 
-/*
-export interface CardInfo {
-  image?: LiveImage;
-  description?: string;
-  founder?: string;
-  website?: string;
-  sector?: string;
-  coinvestors?: string;
-}
-*/
-
 export default function PortifolioCard(props: CardInfo) {
   const { image, description, founder, website, sector, coinvestors } = props;
   const [openDialog, setDialog] = useState<boolean>(false);
