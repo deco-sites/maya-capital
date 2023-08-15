@@ -51,56 +51,58 @@ export default function PortifolioCard(props: CardInfo) {
             {description}
           </p>
 
-          <div className={`mb-[20px]`}>
-            <p
-              className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
-            >
-              Founder
-            </p>
-            <p
-              className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
-            >
-              {founder}
-            </p>
-          </div>
+          <div className={`lg:grid lg:grid-cols-2`}>
+            <div className={`mb-[20px]`}>
+              <p
+                className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
+              >
+                Founder
+              </p>
+              <p
+                className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
+              >
+                {founder}
+              </p>
+            </div>
 
-          <div className={`mb-[20px]`}>
-            <p
-              className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
-            >
-              Website
-            </p>
-            <p
-              className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
-            >
-              <a href={`https://www.${website}`} target="_blank">{website}</a>
-            </p>
-          </div>
+            <div className={`mb-[20px]`}>
+              <p
+                className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
+              >
+                Website
+              </p>
+              <p
+                className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
+              >
+                <a href={`https://www.${website}`} target="_blank">{website}</a>
+              </p>
+            </div>
 
-          <div className={`mb-[20px]`}>
-            <p
-              className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
-            >
-              Sector
-            </p>
-            <p
-              className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
-            >
-              {sector}
-            </p>
-          </div>
+            <div className={`mb-[20px]`}>
+              <p
+                className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
+              >
+                Sector
+              </p>
+              <p
+                className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
+              >
+                {sector}
+              </p>
+            </div>
 
-          <div className={`mb-[20px]`}>
-            <p
-              className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
-            >
-              Co-Investors
-            </p>
-            <p
-              className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
-            >
-              {coinvestors}
-            </p>
+            <div className={`mb-[20px]`}>
+              <p
+                className={`text-[#002fa7] text-[18px] font-semibold font-["Posteramatext"]`}
+              >
+                Co-Investors
+              </p>
+              <p
+                className={`text-[#333] text-[14px] font-["Posteramatext"] font-normal`}
+              >
+                {coinvestors}
+              </p>
+            </div>
           </div>
         </div>
       </div>
