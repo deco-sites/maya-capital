@@ -67,28 +67,32 @@ export default function MenuButtonSideToSide(props: headerProps) {
         <div className={`w-full h-full`}>
           {isOpen
             ? (
-              <div className={`w-full`}>
-                <div className={`w-[40%] p-[35px]`}>
+              <div className={`w-full h-full`}>
+                <div className={`w-[40%] p-[35px] h-full flex flex-col`}>
                   <Image
                     src={image || ""}
                     width={80}
                     height={34}
                     alt={""}
                   />
-                  <div className={`w-full underline`}></div>
+                  <div className={`w-full border-b-1 my-[60px]`}></div>
                   {linkList?.map((link, index) => {
                     return (
-                      <div key={index} className={``}>
+                      <div key={index} className={`text-[#002fa7] mb-[35px] text-[18px]`}>
                         <a href={link?.link}>{link?.title}</a>
                       </div>
                     );
                   })}
-                  <li>
-                    <a href="">linkdin</a>
-                    <a href="">linkdin</a>
-                  </li>
-                  <div>
-                    <p>a</p>
+                  <div className={`h-full flex flex-col justify-end`}>
+                    <div className={`flex flex-row`}>
+                        <a href="">linkdin</a>
+                        <a href="">linkdin</a>
+                    </div>
+                  </div>
+                  <div className={`absolute top-[50vh] left-auto bottom-auto right-[60%] bg-[#feb13f] rounded-full w-[40px] h-[40px] flex justify-center items-center`}>
+                    <svg width="28" height="16" className={``}>
+                        <use href="/sprites.svg#arrow-left"></use>
+                    </svg>
                   </div>
                 </div>
                 <div className={`w-[60%]`}>
