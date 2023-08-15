@@ -31,7 +31,7 @@ export default function PortifolioCard(props: CardInfo) {
           className={`lg:px-[60px] lg:py-[100px] lg:max-w-[800px] lg:bg-white lg:border-2 lg:border-[#f5f5f5] rounded-lg`}
         >
           <div
-            className={`cursor-pointer flex justify-between relative px-[15px] mb-[40px] flex `}
+            className={`cursor-pointer justify-between relative px-[15px] mb-[40px] flex `}
           >
             <Image src={image || ``} width={100} />
             <Image
