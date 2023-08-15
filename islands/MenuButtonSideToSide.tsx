@@ -78,20 +78,25 @@ export default function MenuButtonSideToSide(props: headerProps) {
                   <div className={`w-full border-b-1 my-[60px]`}></div>
                   {linkList?.map((link, index) => {
                     return (
-                      <div key={index} className={`text-[#002fa7] mb-[35px] text-[18px]`}>
+                      <div
+                        key={index}
+                        className={`text-[#002fa7] mb-[35px] text-[18px]`}
+                      >
                         <a href={link?.link}>{link?.title}</a>
                       </div>
                     );
                   })}
                   <div className={`h-full flex flex-col justify-end`}>
                     <div className={`flex flex-row`}>
-                        <a href="">linkdin</a>
-                        <a href="">linkdin</a>
+                      <a href="">linkdin</a>
+                      <a href="">linkdin</a>
                     </div>
                   </div>
-                  <div className={`absolute top-[50vh] left-auto bottom-auto right-[60%] bg-[#feb13f] rounded-full w-[40px] h-[40px] flex justify-center items-center`}>
+                  <div
+                    className={`absolute top-[50vh] left-auto bottom-auto right-[60%] bg-[#feb13f] rounded-full w-[40px] h-[40px] flex justify-center items-center`}
+                  >
                     <svg width="28" height="16" className={``}>
-                        <use href="/sprites.svg#arrow-left"></use>
+                      <use href="/sprites.svg#arrow-left"></use>
                     </svg>
                   </div>
                 </div>
