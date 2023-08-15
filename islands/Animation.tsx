@@ -16,7 +16,7 @@ export default function Animation() {
           clearInterval(interval);
           return prevIndex;
         });
-      }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
+      }, 1000);
 
       return () => {
         clearInterval(interval);
