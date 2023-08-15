@@ -81,6 +81,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/maya-capital/sections/Footer.tsx",
               "deco-sites/maya-capital/sections/Header.tsx",
               "deco-sites/maya-capital/sections/Links.tsx",
               "deco-sites/maya-capital/sections/Portifolio.tsx",
@@ -7785,6 +7786,85 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Logo"
+        },
+        "href": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Href"
+        }
+      },
+      "required": [],
+      "title": "SocialInfo"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo"
+      },
+      "title": "SocialInfo[]"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@LinkInfo": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Label"
+        },
+        "href": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Href"
+        }
+      },
+      "required": [],
+      "title": "LinkInfo"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@LinkInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@LinkInfo"
+      },
+      "title": "LinkInfo[]"
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "footerLogo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Footer Logo"
+        },
+        "copyrightText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Copyright Text"
+        },
+        "socialInformation": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo[]",
+          "title": "Social Information"
+        },
+        "links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@LinkInfo[]",
+          "title": "Links"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maya-capital/sections/Footer.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvY29tcG9uZW50cy91aS9MaW5rcy50c3g=@Link": {
       "type": "object",
       "properties": {
@@ -8215,6 +8295,13 @@
         "cards": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo[]",
           "title": "Cards"
+        },
+        "morePortifolioHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "More Portifolio Href"
         }
       },
       "required": [],
@@ -10822,6 +10909,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
+      "title": "deco-sites/maya-capital/sections/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/Footer.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/Footer.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
       "title": "deco-sites/maya-capital/sections/Header.tsx",
       "type": "object",
@@ -12095,6 +12203,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
