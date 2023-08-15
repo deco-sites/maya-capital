@@ -6,13 +6,13 @@ export interface Props {
 
 export default function transformative(props: Props) {
   return (
-    <div id="scrollHere" className={`flex flex-row xl:p-[14px] min-h-[60vh]`}>
+    <div id="scrollHere" className={`flex flex-row min-h-[60vh] justify-right lg:mb-[30px]`}>
       <div
-        className={`hidden xl:block w-[30%] px-[100px] pt-[15vw] bg-[#f9fafc]`}
+        className={`hidden xl:block w-[50%] px-[100px] pt-[15vw] bg-[#f9fafc] lg:w-[30%]`}
       >
       </div>
       <div
-        className={`max-w-[1050px] m-[5px]`}
+        className={`max-w-[1050px] m-[5px] lg:m-[0] lg:max-w-[1300px] lg:w-[70%]`}
         style={`
             background-image: linear-gradient(rgba(0, 47, 167, .82), rgba(0, 47, 167, .82)), url(/bg-blue.jpg);
             background-size: auto, cover;

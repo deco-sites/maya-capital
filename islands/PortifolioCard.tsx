@@ -11,24 +11,24 @@ export default function PortifolioCard(props: CardInfo) {
   };
 
   return (
-    <div className={`relative `}>
+    <div className={`relative flex justify-center items-center border border-[#f9fafc] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] transition duration-300 ease-in-out`}>
       <div /*Image container*/
         onClick={() => {
           toggleVisibility();
         }}
-        className={`px-[20px] py-[50px] border border-[#f9fafc] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] lg:flex lg:justify-center transition duration-300 ease-in-out`}
+        className={`px-[20px] py-[50px]  lg:flex lg:justify-center `}
       >
         <Image src={image || ``} width={88} class={`h-auto`} />
       </div>
       <div
         className={`${
           !openDialog
-            ? `hidden `
-            : `lg:bg-[rgb(255,255,255,0.5)] fixed top-0 left-0 bg-white w-[100vw] h-[100vh] px-[35px] py-[135px] z-50 lg:flex lg:justify-center lg:items-center`
+            ? `z-[-1] h-0 w-0 opacity-0 overflow-hidden `
+            : `lg:bg-[rgb(255,255,255,0.5)] fixed top-0 left-0 bg-white w-[100vw] h-[100vh] px-[35px] py-[135px] z-50 lg:flex lg:justify-center lg:items-center transition duration-300 ease-in-out`
         }`}
       >
         <div
-          className={`lg:px-[60px] lg:py-[100px] lg:max-w-[800px] lg:bg-white lg:border-2 lg:border-[#f5f5f5] rounded-lg`}
+          className={`lg:px-[60px] lg:py-[100px] lg:max-w-[800px] lg:bg-white lg:border lg:border-[#f5f5f5] rounded-lg`}
         >
           <div
             className={`cursor-pointer justify-between relative px-[15px] mb-[40px] flex `}
