@@ -127,7 +127,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
               }}
           </div>
           <div
-            className={`xl:hidden h-full bg-white w-[30%] opacity-50`}
+            className={`xl:hidden h-full bg-white w-[30%] opacity-60`}
             onClick={() => setIsOpen(!isOpen)}
           >
           </div>
