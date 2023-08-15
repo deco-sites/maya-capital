@@ -27,7 +27,7 @@ export default function PortifolioCard(props: CardInfo) {
         onClick={() => {
           toggleVisibility();
         }}
-        className={`px-[20px] py-[50px] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] lg:flex lg:justify-center`}
+        className={`px-[20px] py-[50px] border border-[#f9fafc] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] lg:flex lg:justify-center transition duration-300 ease-in-out`}
       >
         <Image src={image || ``} width={88} class={`h-auto`} />
       </div>
