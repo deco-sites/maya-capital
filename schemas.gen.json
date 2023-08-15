@@ -65,6 +65,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/MenuButtonSideToSide.tsx",
               "./islands/PortifolioCard.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
@@ -82,6 +83,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/maya-capital/sections/Approach.tsx",
               "deco-sites/maya-capital/sections/Footer.tsx",
+              "deco-sites/maya-capital/sections/Header.tsx",
               "deco-sites/maya-capital/sections/Links.tsx",
               "deco-sites/maya-capital/sections/Portifolio.tsx",
               "deco-sites/std/sections/Analytics.tsx",
@@ -7321,6 +7323,41 @@
       "format": "image-uri",
       "title": "Image"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA==@headerProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "linkList": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "link": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Link"
+              }
+            },
+            "required": []
+          },
+          "title": "Link List"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maya-capital/sections/Header.tsx@headerProps"
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo": {
       "type": "object",
       "properties": {
@@ -10571,6 +10608,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL01lbnVCdXR0b25TaWRlVG9TaWRlLnRzeA==": {
+      "title": "./islands/MenuButtonSideToSide.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA==@headerProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/MenuButtonSideToSide.tsx"
+          ],
+          "default": "./islands/MenuButtonSideToSide.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1BvcnRpZm9saW9DYXJkLnRzeA==": {
       "title": "./islands/PortifolioCard.tsx",
       "type": "object",
@@ -10919,6 +10977,27 @@
             "deco-sites/maya-capital/sections/Footer.tsx"
           ],
           "default": "deco-sites/maya-capital/sections/Footer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
+      "title": "deco-sites/maya-capital/sections/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA==@headerProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/Header.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/Header.tsx"
         }
       }
     },
@@ -12104,6 +12183,9 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01lbnVCdXR0b25TaWRlVG9TaWRlLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1BvcnRpZm9saW9DYXJkLnRzeA=="
         }
       ]
@@ -12177,6 +12259,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvSGVhZGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvTGlua3MudHN4"

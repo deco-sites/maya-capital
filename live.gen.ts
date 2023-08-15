@@ -4,9 +4,10 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/PortifolioCard.tsx";
-import * as $$$$$$$$0 from "./sections/Approach.tsx";
-import * as $$$$$$$$1 from "./sections/Footer.tsx";
+import * as $$$$$0 from "./islands/MenuButtonSideToSide.tsx";
+import * as $$$$$1 from "./islands/PortifolioCard.tsx";
+import * as $$$$$$$$0 from "./sections/Footer.tsx";
+import * as $$$$$$$$1 from "./sections/Header.tsx";
 import * as $$$$$$$$2 from "./sections/Links.tsx";
 import * as $$$$$$$$3 from "./sections/Portifolio.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
@@ -152,7 +153,8 @@ const manifest = {
     "./routes/live/workflows/run.ts": $live_workflows,
   },
   "islands": {
-    "./islands/PortifolioCard.tsx": $$$$$0,
+    "./islands/MenuButtonSideToSide.tsx": $$$$$0,
+    "./islands/PortifolioCard.tsx": $$$$$1,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
@@ -160,8 +162,8 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/maya-capital/sections/Approach.tsx": $$$$$$$$0,
-    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$1,
+    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$0,
+    "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$1,
     "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$2,
     "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$3,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
