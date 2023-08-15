@@ -7,7 +7,9 @@ export interface Props {
 
 export default function DreamBigger({ title, description }: Props) {
   return (
-    <div className={`xl:px-[100px] px-[15px] py-[80px] bg-[#F9FAFC] lg:mb-[30px]`}>
+    <div
+      className={`xl:px-[100px] px-[15px] py-[80px] bg-[#F9FAFC] lg:mb-[30px]`}
+    >
       <h1
         className={`text-[#002fa7] mt-[10px] mb-[20px] font-bold xl:text-[80px] text-[36px]`}
         dangerouslySetInnerHTML={{

@@ -6,7 +6,10 @@ export interface Props {
 
 export default function transformative(props: Props) {
   return (
-    <div id="scrollHere" className={`flex flex-row min-h-[60vh] justify-right lg:mb-[30px]`}>
+    <div
+      id="scrollHere"
+      className={`flex flex-row min-h-[60vh] justify-right lg:mb-[30px]`}
+    >
       <div
         className={`hidden xl:block w-[50%] px-[100px] pt-[15vw] bg-[#f9fafc] lg:w-[30%]`}
       >

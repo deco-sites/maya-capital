@@ -11,7 +11,9 @@ export default function PortifolioCard(props: CardInfo) {
   };
 
   return (
-    <div className={`relative flex justify-center items-center border border-[#f9fafc] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] transition duration-300 ease-in-out`}>
+    <div
+      className={`relative flex justify-center items-center border border-[#f9fafc] cursor-pointer hover:bg-white hover:rounded-lg hover:border hover:border-[#f5f5f5] transition duration-300 ease-in-out`}
+    >
       <div /*Image container*/
         onClick={() => {
           toggleVisibility();
