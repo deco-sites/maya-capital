@@ -27,6 +27,14 @@ function GlobalTags() {
       <meta name="theme-color" content="#221E1F" />
       <meta name="msapplication-TileColor" content="#221E1F" />
 
+      <title>Maya Capital</title>
+      <link
+        href="https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5cab9456447a044ec2ee318d_grace%20icon.jpg"
+        rel="shortcut icon"
+        type="image/x-icon"
+      >
+      </link>
+
       {
         /*
          * Include fonts

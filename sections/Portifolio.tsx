@@ -22,7 +22,7 @@ export default function Portifolio(props: Props) {
 
   return (
     <section
-      className={`py-[120px] px-[30px] bg-[#f9fafc] lg:px-[115px]`}
+      className={`py-[120px] px-[30px] bg-[#f9fafc] lg:px-[115px] lg:mb-[30px]`}
     >
       <p
         className={`font-["Posteramatext"] text-[#002fa7] text-[10px] uppercase tracking-[4px] lg:text-[16px] lg:tracking-[6px]`}
