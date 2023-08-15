@@ -81,6 +81,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/maya-capital/sections/Approach.tsx",
               "deco-sites/maya-capital/sections/Footer.tsx",
               "deco-sites/maya-capital/sections/Header.tsx",
               "deco-sites/maya-capital/sections/Links.tsx",
@@ -7786,6 +7787,34 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvQXBwcm9hY2gudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "subTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub Title"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/maya-capital/sections/Approach.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==@SocialInfo": {
       "type": "object",
       "properties": {
@@ -10909,6 +10938,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvQXBwcm9hY2gudHN4": {
+      "title": "deco-sites/maya-capital/sections/Approach.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvQXBwcm9hY2gudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/maya-capital/sections/Approach.tsx"
+          ],
+          "default": "deco-sites/maya-capital/sections/Approach.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/maya-capital/sections/Footer.tsx",
       "type": "object",
@@ -12203,6 +12253,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvQXBwcm9hY2gudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvRm9vdGVyLnRzeA=="
