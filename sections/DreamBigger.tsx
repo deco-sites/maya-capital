@@ -8,10 +8,10 @@ export interface Props {
 export default function DreamBigger({ title, description }: Props) {
   return (
     <div
-      className={`xl:px-[100px] px-[15px] xl:py-[80px] py-[120px] bg-[#F9FAFC] lg:mb-[30px]`}
+      className={`xl:px-[110px] pb-[140px] px-[20px] py-[80px] lg:py-[140px]  bg-[#F9FAFC] lg:mb-[30px]`}
     >
       <h1
-        className={`text-[#002fa7] mt-[10px] xl:mb-[20px] font-bold xl:text-[80px] text-[36px]`}
+        className={`text-[#002fa7] ml-[-2px] mb-[5px] mt-[10px] xl:mb-[20px] font-bold xl:text-[80px] text-[36px]`}
         dangerouslySetInnerHTML={{
           __html: `
                 ${title}
@@ -20,7 +20,7 @@ export default function DreamBigger({ title, description }: Props) {
       >
       </h1>
       <div
-        className={`max-w-[380px] xl:max-w-[440px] xl:text-[16px] text-[14px] font-light mb-[10px]`}
+        className={`max-w-[380px] text-[#333] xl:max-w-[440px] xl:text-[16px] text-[14px] font-light mb-[10px]`}
       >
         <p>{description}</p>
       </div>

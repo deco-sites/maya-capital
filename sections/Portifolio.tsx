@@ -44,7 +44,7 @@ export default function Portifolio(props: Props) {
       </div>
 
       <div
-        className={`grid grid-cols-2 md:grid-cols-3 ml-[-40px] lg:grid-cols-4 lg:max-w-[1200px] lg:gap-[4vw] lg:ml-[-75px]`}
+        className={`grid grid-cols-2 md:grid-cols-3 ml-[-55px] lg:grid-cols-4 lg:max-w-[1200px] lg:gap-[4vw] lg:ml-[-75px]`}
       >
         {cards?.map((item) => {
           return (
@@ -60,7 +60,7 @@ export default function Portifolio(props: Props) {
         })}
       </div>
 
-      <div className={`mt-[60px]`}>
+      <div className={`mt-[60px] mb-[20xp]`}>
         <a
           className={`flex flex-col lg:items-center lg:flex-row lg:gap-[20px] `}
           href={morePortifolioHref}

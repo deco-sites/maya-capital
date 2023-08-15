@@ -36,7 +36,7 @@ export default function Approach(props: Props) {
         {description}
       </p>
 
-      <div className={`grid grid-cols-3 gap-[15px] p-[15px]`}>
+      <div className={`grid grid-cols-3 gap-[15px] px-[25px]`}>
         <div className={`flex justify-center mt-[30px] lg:mt-[5px] `}>
           <Image
             className={`lg:w-[130px]`}
@@ -61,7 +61,7 @@ export default function Approach(props: Props) {
 
         <div className={`flex justify-center lg:justify-left`}>
           <p
-            className={`text-left text-[14px] font-light font-["Posteramatext"] text-[#333] lg:text-[30px] lg:ml-[-100px]`}
+            className={`text-left text-[14px] ml-[-20px] font-light font-["Posteramatext"] text-[#333] lg:text-[30px] lg:ml-[-100px]`}
           >
             Inspire future generations
           </p>

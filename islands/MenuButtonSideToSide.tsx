@@ -45,12 +45,12 @@ export default function MenuButtonSideToSide(props: headerProps) {
             onClick={() => setIsOpen(!isOpen)}
           >
           </div>
-          <div className={`xl:w-full h-full bg-white w-[70%]`}>
+          <div className={`xl:w-full h-full bg-[#f9fafc] w-[70%]`}>
             {isOpen
               ? (
                 <div className={`w-full h-full flex`}>
                   <div
-                    className={`w-full xl:w-[39%] xl:p-[35px] px-[24px] py-[35px] h-full flex flex-col`}
+                    className={`w-full xl:w-[31%] xl:p-[35px] px-[24px] py-[35px] h-full flex flex-col`}
                   >
                     <Image
                       src={image || ""}
@@ -95,7 +95,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
                       </a>
                     </div>
                     <div
-                      className={`absolute top-[50vh] left-auto z-10 bottom-auto xl:right-[60%] right-[24%] bg-[#feb13f] rounded-full w-[40px] h-[40px] flex justify-center items-center cursor-pointer`}
+                      className={`absolute top-[50vh] left-auto z-10 bottom-auto xl:right-[68%] right-[24%] bg-[#feb13f] rounded-full w-[40px] h-[40px] flex justify-center items-center cursor-pointer`}
                       onClick={() => setIsOpen(!isOpen)}
                     >
                       <svg width="28" height="16" className={``}>
@@ -104,7 +104,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
                     </div>
                   </div>
                   <div
-                    className={`hidden xl:flex w-[62%] xl:opacity-100 justify-center items-center bg-no-repeat bg-cover bg-center h-full`}
+                    className={`hidden xl:flex w-[70%] xl:opacity-100 justify-center items-center bg-no-repeat bg-cover bg-center h-full`}
                     onClick={() => setIsOpen(!isOpen)}
                     style={`
                   background-image: linear-gradient(rgba(0, 47, 167, .92), rgba(0, 47, 167, .92)), url(/bg-blue.jpg);
@@ -115,7 +115,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
                     <svg
                       width="100"
                       height="42"
-                      className={`fill-white xl:block hidden`}
+                      className={`fill-[#f9fafc] xl:block hidden`}
                     >
                       <use href="/sprites.svg#maya-white"></use>
                     </svg>
@@ -127,7 +127,7 @@ export default function MenuButtonSideToSide(props: headerProps) {
               }}
           </div>
           <div
-            className={`xl:hidden h-full bg-white w-[30%] opacity-60`}
+            className={`xl:hidden h-full bg-[#f9fafc] w-[30%] opacity-60`}
             onClick={() => setIsOpen(!isOpen)}
           >
           </div>

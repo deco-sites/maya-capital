@@ -8,12 +8,12 @@ export default function ScrollButton() {
 
   return (
     <div
-      className="scroll-button flex flex-row items-center uppercase mt-[90px] tracking-[2px] font-bold xl:text-[16px] text-[14px]"
+      className="scroll-button flex flex-row items-center uppercase mt-[75px] tracking-[2px] font-bold xl:text-[16px] text-[12px] lg:text-[14px] text-[#434343]"
       onClick={scrollTo}
     >
       Discover more{" "}
       <div
-        className={`ml-[20px] flex align-center justify-center bg-[#feb13f] rounded-full p-[4px] xl:p-[7px]`}
+        className={`ml-[20px] flex align-center justify-center bg-[#feb13f] rounded-full p-[4px] xl:p-[7px] `}
       >
         <svg width={18} height={16} className={`rotate-[270deg] fill-white`}>
           <use href="/sprites.svg#arrow-custom"></use>
