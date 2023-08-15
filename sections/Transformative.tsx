@@ -21,7 +21,7 @@ export default function transformative(props: Props) {
             background-size: auto, cover;
             `}
       >
-        <div className={`xl:px-[95px] py-[130px] px-[15px]`}>
+        <div className={`xl:px-[95px] py-[140px] px-[15px]`}>
           <h3
             className={`text-[#feb13f] font-bold xl:text-[80px] text-[35px] mb-[20px] mt-[10px] max-w-[860px] leading-[1.1em]`}
           >
