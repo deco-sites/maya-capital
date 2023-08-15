@@ -8258,6 +8258,13 @@
         "cards": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9tYXlhLWNhcGl0YWwvc2VjdGlvbnMvUG9ydGlmb2xpby50c3g=@CardInfo[]",
           "title": "Cards"
+        },
+        "morePortifolioHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "More Portifolio Href"
         }
       },
       "required": [],

@@ -1,9 +1,11 @@
 import PortifolioCard from "../islands/PortifolioCard.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 export interface Props {
   subTitle?: string;
   title?: string;
   cards?: CardInfo[];
+  morePortifolioHref?: string;
 }
 
 export interface CardInfo {
@@ -16,7 +18,7 @@ export interface CardInfo {
 }
 
 export default function Portifolio(props: Props) {
-  const { subTitle, title, cards } = props;
+  const { subTitle, title, cards, morePortifolioHref } = props;
 
   return (
     <section
@@ -56,6 +58,10 @@ export default function Portifolio(props: Props) {
             />
           );
         })}
+      </div>
+
+      <div className={`mt-[60px]`}>
+        <a className={`flex gap-[5px] `} href={morePortifolioHref}><p className={`uppercase text-[12px] font-bold font-["Posteramatext"] tracking-[2px] text-[#434343] lg:text-[16px] `}>Discover our portifolio companies</p> <div className={` flex align-center justify-center bg-[#feb13f] w-[18px] h-[18px] rounded-full`}><Image src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5ca9b9427177dc81cad32c68_right-arrow.png`} width={16}/></div> </a>
       </div>
     </section>
   );
