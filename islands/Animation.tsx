@@ -36,6 +36,8 @@ export default function Animation() {
     }
   };
 
+  //tentando arrumar bug pra subir pra produção
+
   useEffect(() => {
     // deno-lint-ignore no-window-prefix
     window.addEventListener("scroll", handleScroll);
