@@ -3,38 +3,12 @@ import { asset, Head } from "$fresh/runtime.ts";
 function GlobalTags() {
   return (
     <Head>
-      {/* Icons */}
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href={asset("/favicon-32x32.png")}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href={asset("/favicon-16x16.png")}
-      />
-      <link
-        rel="shortcut icon"
-        type="image/x-icon"
-        href={asset("/favicon-32x32.png")}
-      />
-
+      {/* Enable View Transitions API */}
+      <meta name="view-transition" content="same-origin" />
+      {/* Tailwind v3 CSS file */}
+      <link href={asset("/styles.css")} rel="stylesheet" />
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
-      <meta name="theme-color" content="#221E1F" />
-      <meta name="msapplication-TileColor" content="#221E1F" />
-
-      <title>Maya Capital</title>
-      <link
-        href="https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5cab9456447a044ec2ee318d_grace%20icon.jpg"
-        rel="shortcut icon"
-        type="image/x-icon"
-      >
-      </link>
-
       {
         /*
          * Include fonts
