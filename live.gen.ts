@@ -12,10 +12,12 @@ import * as $$$$$$$$0 from "./sections/Approach.tsx";
 import * as $$$$$$$$1 from "./sections/DreamBigger.tsx";
 import * as $$$$$$$$2 from "./sections/Footer.tsx";
 import * as $$$$$$$$3 from "./sections/Header.tsx";
-import * as $$$$$$$$4 from "./sections/Links.tsx";
-import * as $$$$$$$$5 from "./sections/Portifolio.tsx";
-import * as $$$$$$$$6 from "./sections/Theme.tsx";
-import * as $$$$$$$$7 from "./sections/Transformative.tsx";
+import * as $$$$$$$$4 from "./sections/HeaderWrapper.tsx";
+import * as $$$$$$$$5 from "./sections/Links.tsx";
+import * as $$$$$$$$6 from "./sections/OurBigDream.tsx";
+import * as $$$$$$$$7 from "./sections/Portifolio.tsx";
+import * as $$$$$$$$8 from "./sections/Theme.tsx";
+import * as $$$$$$$$9 from "./sections/Transformative.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -199,10 +201,12 @@ const manifest = {
     "deco-sites/maya-capital/sections/DreamBigger.tsx": $$$$$$$$1,
     "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$2,
     "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$3,
-    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$4,
-    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$5,
-    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$6,
-    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$7,
+    "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$4,
+    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$5,
+    "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$6,
+    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$7,
+    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$8,
+    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$9,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
