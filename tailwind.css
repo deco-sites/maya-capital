@@ -48,4 +48,19 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    background-color: #002FA7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FEB13F
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #FEB13F #002FA7;
+  }
+
 }

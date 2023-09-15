@@ -13,7 +13,7 @@ export interface headerProps {
 export default function Header(props: headerProps) {
   return (
     <div
-      className={`flex items-center flex-row py-[14px] xl:px-[114px] justify-between bg-[#F9FAFC] px-[21px]`}
+      className={`flex items-center flex-row py-[14px] xl:px-[114px] justify-between bg-[#F9FAFC] px-[21px] relative z-10`}
     >
       <div className={``}>
         <Image

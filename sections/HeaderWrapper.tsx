@@ -49,21 +49,22 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
     height: "38vh",
     position: "relative",
     display: "flex",
+    zIndex: -1,
   };
 
   return (
-    <div>
+    <div class="relative -top-[75.98px]">
       <span style={background}></span>
-      <div class="flex flex-col lg:max-w-[1050px] md:max-w-[770px] sm:max-w-[500px] max-w-[370px] mx-auto w-full bg-white lg:px-[100px] lg:pt-[100px] md:px-[60px] sm:pt-[60px] sm:px-[40px] p-[35px] relative z-10 bottom-[20vh]">
-        <p class="text-[#002fa7] lg:text-[16px] text-[10px] font-light">
+      <div class="flex flex-col lg:max-w-[1050px] md:max-w-[770px] sm:max-w-[500px] max-w-[370px] mx-auto w-full bg-white lg:px-[100px] lg:pt-[100px] md:px-[60px] sm:pt-[60px] sm:px-[40px] p-[35px] relative z-0 bottom-[18vh]">
+        <p class="text-[#002fa7] lg:text-[16px] text-[10px] font-light tracking-[6px]">
           {props.subTitle}
         </p>
         <HTMLRenderer
           html={props.title}
-          class="lg:text-[80px] md:text-[50px] text-[36px] font-semibold lg:ml-0 md:ml-0 -ml-[5px] leading-[1.1em]"
+          class="lg:text-[80px] sm:text-[50px] text-[36px] font-semibold -ml-[5px] leading-[1.1em] lg:mt-[10px] lg:mb-[20px] my-[10px]"
         />
         {props.links && (
-          <nav class="flex items-center mt-[60px] py-[10px]">
+          <nav class="flex items-center mt-[40px] py-[10px]">
             {props.links.map((link) => (
               <>
                 <a

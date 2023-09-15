@@ -9,7 +9,7 @@ export interface OurBigDreamProps {
 
 export default function OurBigDream(props: OurBigDreamProps) {
   return (
-    <div class="p-[14px] min-h-[60vh] bg-[#f9fafc]" id={props.id}>
+    <div class="m-[14px] min-h-[60vh] bg-[#f9fafc]" id={props.id}>
       <div class="max-w-[680px] mx-auto w-full py-[120px] lg:px-0 px-[50px] relative lg:-left-[50px]">
         {props.title && (
           <HTMLRenderer
