@@ -15,9 +15,10 @@ import * as $$$$$$$$3 from "./sections/Header.tsx";
 import * as $$$$$$$$4 from "./sections/HeaderWrapper.tsx";
 import * as $$$$$$$$5 from "./sections/Links.tsx";
 import * as $$$$$$$$6 from "./sections/OurBigDream.tsx";
-import * as $$$$$$$$7 from "./sections/Portifolio.tsx";
-import * as $$$$$$$$8 from "./sections/Theme.tsx";
-import * as $$$$$$$$9 from "./sections/Transformative.tsx";
+import * as $$$$$$$$7 from "./sections/OurTeam.tsx";
+import * as $$$$$$$$8 from "./sections/Portifolio.tsx";
+import * as $$$$$$$$9 from "./sections/Theme.tsx";
+import * as $$$$$$$$10 from "./sections/Transformative.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -204,9 +205,10 @@ const manifest = {
     "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$4,
     "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$5,
     "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$6,
-    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$7,
-    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$8,
-    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$9,
+    "deco-sites/maya-capital/sections/OurTeam.tsx": $$$$$$$$7,
+    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$8,
+    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$9,
+    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$10,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
