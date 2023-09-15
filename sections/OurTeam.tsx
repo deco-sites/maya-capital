@@ -22,7 +22,7 @@ export interface Link {
 export default function OurTeam(props: OurTeamProps) {
   return (
     <div
-      class="py-[120px] lg:px-[100px] sm:px-[50px] bg-[#f9fafc] sm:m-[14px] p-[14px]"
+      class="py-[120px] lg:px-[100px] sm:px-[50px] bg-[#f9fafc] sm:mx-[14px] my-[28px] p-[14px]"
       id={props.id}
     >
       <div class="mx-auto">

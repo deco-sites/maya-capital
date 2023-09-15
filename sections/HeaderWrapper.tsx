@@ -14,7 +14,6 @@ export interface HeaderWrapperProps {
 export interface Links {
   label?: string;
   url?: string;
-  color?: string;
   fontWeight?:
     | "light"
     | "normal"
@@ -69,9 +68,8 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
               <>
                 <a
                   href={link.url}
-                  class="mr-[40px]"
+                  class="mr-[40px] text-[#002fa7] hover:text-[#feb13f] hover:underline transition-all duration-300"
                   style={{
-                    color: link.color,
                     fontWeight: link.fontWeight,
                     fontSize: link.fontSize,
                   }}
@@ -80,15 +78,15 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
                 </a>
               </>
             ))}
-            {props.icon && (
-              <span class="bg-[#feb13f] rounded-full lg:w-[28px] w-[20px] lg:h-[28px] h-[20px] flex justify-center items-center">
+            {props?.icon && (
+              <a href={props?.links[0].url} class="bg-[#feb13f] hover:opacity-[.7] rounded-full lg:w-[28px] w-[20px] lg:h-[28px] h-[20px] flex justify-center items-center">
                 <Image
                   src={props.icon}
                   width={9}
                   height={16}
                   alt="arrow-icon"
                 />
-              </span>
+              </a>
             )}
           </nav>
         )}
