@@ -7,42 +7,41 @@ export default function Animation() {
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setFadeInIndex((prevIndex) => {
-        if (prevIndex < 8) {
-          return prevIndex + 1;
-        }
-        clearInterval(interval);
-        return prevIndex;
-      });
-    }, 1000); // Tempo entre cada elemento aparecer (milissegundos)
+    if (hasEnteredViewport == true) {
+      const interval = setInterval(() => {
+        setFadeInIndex((prevIndex) => {
+          if (prevIndex < 8) {
+            return prevIndex + 1;
+          }
+          clearInterval(interval);
+          return prevIndex;
+        });
+      }, 1000);
 
-    return () => {
-      clearInterval(interval);
-    };
+      return () => {
+        clearInterval(interval);
+      };
+    }
   }, [hasEnteredViewport]);
 
   const handleScroll = () => {
     if (divRef.current) {
       const rect = divRef.current.getBoundingClientRect();
-      // Check if the div is in the viewport
       if (
         rect.top >= 0 &&
         rect.bottom <= window.innerHeight
       ) {
-        // Run your function when the div is in the viewport
-        console.log("Div is in the viewport!");
         setHasEnteredViewport(true);
       }
     }
   };
 
+  //tentando arrumar bug pra subir pra produção
+
   useEffect(() => {
-    // Add a scroll event listener to the window
     // deno-lint-ignore no-window-prefix
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       // deno-lint-ignore no-window-prefix
       window.removeEventListener("scroll", handleScroll);
