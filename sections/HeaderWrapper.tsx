@@ -55,15 +55,15 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
     <div class="relative -top-[75.98px]">
       <span style={background}></span>
       <div class="flex flex-col lg:max-w-[1050px] md:max-w-[770px] sm:max-w-[500px] max-w-[370px] mx-auto w-full bg-white lg:px-[100px] lg:pt-[100px] md:px-[60px] sm:pt-[60px] sm:px-[40px] p-[35px] relative z-0 bottom-[18vh]">
-        <p class="text-[#002fa7] lg:text-[16px] text-[10px] font-light tracking-[6px]">
+        <p class="text-[#002fa7] lg:text-[16px] text-[10px] font-light tracking-[6px] transform3DText">
           {props.subTitle}
         </p>
         <HTMLRenderer
           html={props.title}
-          class="lg:text-[80px] sm:text-[50px] text-[36px] font-semibold -ml-[5px] leading-[1.1em] lg:mt-[10px] lg:mb-[20px] my-[10px]"
+          class="lg:text-[80px] sm:text-[50px] text-[36px] font-semibold -ml-[5px] leading-[1.1em] lg:mt-[10px] lg:mb-[20px] my-[10px] transform3DText"
         />
         {props.links && (
-          <nav class="flex items-center mt-[40px] py-[10px]">
+          <nav class="flex items-center mt-[40px] py-[10px] transform3DText">
             {props.links.map((link) => (
               <>
                 <a
@@ -79,7 +79,10 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
               </>
             ))}
             {props?.icon && (
-              <a href={props?.links[0].url} class="bg-[#feb13f] hover:opacity-[.7] rounded-full lg:w-[28px] w-[20px] lg:h-[28px] h-[20px] flex justify-center items-center">
+              <a
+                href={props?.links[0].url}
+                class="bg-[#feb13f] hover:opacity-[.7] rounded-full lg:w-[28px] w-[20px] lg:h-[28px] h-[20px] flex justify-center items-center"
+              >
                 <Image
                   src={props.icon}
                   width={9}
