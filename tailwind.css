@@ -10,9 +10,21 @@
     src: url(./static/freighttext-book.ttf) format("ttf");
   }
 
-  /* Allow changing font family via CMS */
   html {
+    /* Allow changing font family via CMS */
     font-family: var(--font-family);
+
+    scrollbar-width: thin;
+    scrollbar-color: #FEB13F #002FA7;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    background-color: #002FA7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FEB13F
   }
 
   /** Remove default styles from input[type=number] */
@@ -26,10 +38,6 @@
     -moz-appearance: textfield;
     appearance: textfield;
   }
-
-  .box-shadow-1 {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-  }
 }
 
 @layer components {
@@ -38,6 +46,28 @@
   .no-scroll {
     overflow: hidden;
     height: 100vh;
+  }
+
+  .box-shadow-1 {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  }
+
+  .transform3DText {
+    animation: animationText 1s ease-in-out forwards;
+  }
+
+  @keyframes animationText {
+    from {
+      transform: translate3d(0px, 25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 0;
+    }
+
+    to {
+      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 1;
+    }
   }
 }
 
@@ -52,19 +82,4 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
-
-  ::-webkit-scrollbar {
-    width: 2px;
-    background-color: #002FA7;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #FEB13F
-  }
-
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: #FEB13F #002FA7;
-  }
-
 }
