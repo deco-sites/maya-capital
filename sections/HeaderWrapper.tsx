@@ -7,6 +7,7 @@ export interface HeaderWrapperProps {
   src: LiveImage;
   subTitle?: string;
   title: HTML;
+  /** @description If enableHover in links is set to true, the default text color will be blue.*/
   links?: Links[];
   icon?: LiveImage;
 }
@@ -14,25 +15,7 @@ export interface HeaderWrapperProps {
 export interface Links {
   label?: string;
   url?: string;
-  fontWeight?:
-    | "light"
-    | "normal"
-    | "bold"
-    | "bolder"
-    | "inherit"
-    | "initial"
-    | "revert"
-    | "unset"
-    | "100"
-    | "200"
-    | "300"
-    | "400"
-    | "500"
-    | "600"
-    | "700"
-    | "800"
-    | "900";
-  fontSize?: string;
+  enableHover?: boolean;
 }
 
 export default function HeaderWrapper(props: HeaderWrapperProps) {
@@ -65,18 +48,17 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
         {props.links && (
           <nav class="flex items-center mt-[40px] py-[10px] transform3DText">
             {props.links.map((link) => (
-              <>
-                <a
-                  href={link.url}
-                  class="mr-[40px] text-[#002fa7] hover:text-[#feb13f] hover:underline transition-all duration-300"
-                  style={{
-                    fontWeight: link.fontWeight,
-                    fontSize: link.fontSize,
-                  }}
-                >
-                  {link.label}
-                </a>
-              </>
+              <a
+                key={link.url}
+                href={link.url}
+                class={`${
+                  link.enableHover
+                    ? `text-[#002fa7] text-[14px] hover:text-[#feb13f] hover:underline transition-all duration-300 mr-[40px] font-light`
+                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold"
+                }`}
+              >
+                {link.label}
+              </a>
             ))}
             {props?.icon && (
               <a
