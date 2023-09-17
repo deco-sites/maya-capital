@@ -35,9 +35,9 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
   };
 
   return (
-    <div class="relative -top-[75.98px]">
+    <div class="relative -mt-[75.98px]">
       <span style={background}></span>
-      <div class="flex flex-col lg:max-w-[1050px] md:max-w-[770px] sm:max-w-[500px] max-w-[370px] mx-auto w-full bg-white lg:px-[100px] lg:pt-[100px] md:px-[60px] sm:pt-[60px] sm:px-[40px] p-[35px] relative z-0 bottom-[18vh]">
+      <div class="flex flex-col lg:max-w-[1050px] md:max-w-[770px] sm:max-w-[500px] max-w-[370px] mx-auto w-full bg-white lg:p-[100px] md:p-[60px] sm:px-[40px] p-[35px] relative z-0 -mt-[18vh]">
         <p class="text-[#002fa7] lg:text-[16px] text-[10px] font-light tracking-[6px] transform3DText">
           {props.subTitle}
         </p>
@@ -54,7 +54,7 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
                 class={`${
                   link.enableHover
                     ? `text-[#002fa7] text-[14px] hover:text-[#feb13f] hover:underline transition-all duration-300 mr-[40px] font-light`
-                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold"
+                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold tracking-[2px]"
                 }`}
               >
                 {link.label}
