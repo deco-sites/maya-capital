@@ -69,6 +69,12 @@
       opacity: 1;
     }
   }
+
+  .w-auto-100 {
+    @media screen and (max-width: 638px) {
+      width: 100px;
+    }
+  }
 }
 
 @layer utilities {
