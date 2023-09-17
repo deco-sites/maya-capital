@@ -46,7 +46,7 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
           class="lg:text-[80px] sm:text-[50px] text-[36px] font-semibold -ml-[5px] leading-[1.1em] lg:mt-[10px] lg:mb-[20px] my-[10px] transform3DText"
         />
         {props.links && (
-          <nav class="flex items-center mt-[40px] py-[10px] transform3DText">
+          <nav class="flex flex-wrap items-center mt-[40px] py-[10px] transform3DText">
             {props.links.map((link) => (
               <a
                 key={link.url}
@@ -54,7 +54,7 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
                 class={`${
                   link.enableHover
                     ? `text-[#002fa7] text-[14px] hover:text-[#feb13f] hover:underline transition-all duration-300 mr-[40px] font-light`
-                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold tracking-[2px]"
+                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold tracking-[2px] lg:mb-0 mb-[30px]"
                 }`}
               >
                 {link.label}
