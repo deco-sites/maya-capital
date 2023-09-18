@@ -56,9 +56,27 @@
     animation: animationText 1s ease-in-out forwards;
   }
 
+  .transformSlideText {
+    animation: animationSlideText 1s ease-in-out forwards;
+  }
+
   @keyframes animationText {
     from {
       transform: translate3d(0px, 25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 0;
+    }
+
+    to {
+      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animationSlideText {
+    from {
+      transform: translate3d(-100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
       transform-style: preserve-3d;
       opacity: 0;
     }
