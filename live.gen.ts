@@ -9,19 +9,20 @@ import * as $$$$$1 from "./islands/MenuButtonSideToSide.tsx";
 import * as $$$$$2 from "./islands/PortifolioCard.tsx";
 import * as $$$$$3 from "./islands/ScrollButton.tsx";
 import * as $$$$$$$$0 from "./sections/Approach.tsx";
-import * as $$$$$$$$1 from "./sections/DreamBigger.tsx";
-import * as $$$$$$$$2 from "./sections/Footer.tsx";
-import * as $$$$$$$$3 from "./sections/Header.tsx";
-import * as $$$$$$$$4 from "./sections/HeaderWrapper.tsx";
-import * as $$$$$$$$5 from "./sections/Links.tsx";
-import * as $$$$$$$$6 from "./sections/OurBigDream.tsx";
-import * as $$$$$$$$7 from "./sections/OurTeam.tsx";
-import * as $$$$$$$$8 from "./sections/OurValues.tsx";
-import * as $$$$$$$$9 from "./sections/PortfolioCareers.tsx";
-import * as $$$$$$$$10 from "./sections/PortfolioItem.tsx";
-import * as $$$$$$$$11 from "./sections/Portifolio.tsx";
-import * as $$$$$$$$12 from "./sections/Theme.tsx";
-import * as $$$$$$$$13 from "./sections/Transformative.tsx";
+import * as $$$$$$$$1 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$2 from "./sections/DreamBigger.tsx";
+import * as $$$$$$$$3 from "./sections/Footer.tsx";
+import * as $$$$$$$$4 from "./sections/Header.tsx";
+import * as $$$$$$$$5 from "./sections/HeaderWrapper.tsx";
+import * as $$$$$$$$6 from "./sections/Links.tsx";
+import * as $$$$$$$$7 from "./sections/OurBigDream.tsx";
+import * as $$$$$$$$8 from "./sections/OurTeam.tsx";
+import * as $$$$$$$$9 from "./sections/OurValues.tsx";
+import * as $$$$$$$$10 from "./sections/PortfolioCareers.tsx";
+import * as $$$$$$$$11 from "./sections/PortfolioItem.tsx";
+import * as $$$$$$$$12 from "./sections/Portifolio.tsx";
+import * as $$$$$$$$13 from "./sections/Theme.tsx";
+import * as $$$$$$$$14 from "./sections/Transformative.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -204,19 +205,20 @@ const manifest = {
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
     "deco-sites/maya-capital/sections/Approach.tsx": $$$$$$$$0,
-    "deco-sites/maya-capital/sections/DreamBigger.tsx": $$$$$$$$1,
-    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$2,
-    "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$3,
-    "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$4,
-    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$5,
-    "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$6,
-    "deco-sites/maya-capital/sections/OurTeam.tsx": $$$$$$$$7,
-    "deco-sites/maya-capital/sections/OurValues.tsx": $$$$$$$$8,
-    "deco-sites/maya-capital/sections/PortfolioCareers.tsx": $$$$$$$$9,
-    "deco-sites/maya-capital/sections/PortfolioItem.tsx": $$$$$$$$10,
-    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$11,
-    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$12,
-    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$13,
+    "deco-sites/maya-capital/sections/ContactUs.tsx": $$$$$$$$1,
+    "deco-sites/maya-capital/sections/DreamBigger.tsx": $$$$$$$$2,
+    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$3,
+    "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$4,
+    "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$5,
+    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$6,
+    "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$7,
+    "deco-sites/maya-capital/sections/OurTeam.tsx": $$$$$$$$8,
+    "deco-sites/maya-capital/sections/OurValues.tsx": $$$$$$$$9,
+    "deco-sites/maya-capital/sections/PortfolioCareers.tsx": $$$$$$$$10,
+    "deco-sites/maya-capital/sections/PortfolioItem.tsx": $$$$$$$$11,
+    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$12,
+    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$13,
+    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$14,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
