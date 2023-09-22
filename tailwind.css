@@ -121,13 +121,14 @@
       background-color: #FEB13F;
     }
   }
-  
+
 
   .w-auto-100 {
     @media screen and (max-width: 638px) {
       width: 100px;
     }
   }
+
   .w-auto-80 {
     @media screen and (max-width: 638px) {
       width: 80px;
