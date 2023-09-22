@@ -8,6 +8,7 @@ import * as $$$$$0 from "./islands/Animation.tsx";
 import * as $$$$$1 from "./islands/MenuButtonSideToSide.tsx";
 import * as $$$$$2 from "./islands/PortifolioCard.tsx";
 import * as $$$$$3 from "./islands/ScrollButton.tsx";
+import * as $$$$$4 from "./islands/Slider.tsx";
 import * as $$$$$$$$0 from "./sections/Approach.tsx";
 import * as $$$$$$$$1 from "./sections/ContactUs.tsx";
 import * as $$$$$$$$2 from "./sections/DreamBigger.tsx";
@@ -21,8 +22,9 @@ import * as $$$$$$$$9 from "./sections/OurValues.tsx";
 import * as $$$$$$$$10 from "./sections/PortfolioCareers.tsx";
 import * as $$$$$$$$11 from "./sections/PortfolioItem.tsx";
 import * as $$$$$$$$12 from "./sections/Portifolio.tsx";
-import * as $$$$$$$$13 from "./sections/Theme.tsx";
-import * as $$$$$$$$14 from "./sections/Transformative.tsx";
+import * as $$$$$$$$13 from "./sections/Slider.tsx";
+import * as $$$$$$$$14 from "./sections/Theme.tsx";
+import * as $$$$$$$$15 from "./sections/Transformative.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -197,6 +199,7 @@ const manifest = {
     "./islands/MenuButtonSideToSide.tsx": $$$$$1,
     "./islands/PortifolioCard.tsx": $$$$$2,
     "./islands/ScrollButton.tsx": $$$$$3,
+    "./islands/Slider.tsx": $$$$$4,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
@@ -217,8 +220,9 @@ const manifest = {
     "deco-sites/maya-capital/sections/PortfolioCareers.tsx": $$$$$$$$10,
     "deco-sites/maya-capital/sections/PortfolioItem.tsx": $$$$$$$$11,
     "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$12,
-    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$13,
-    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$14,
+    "deco-sites/maya-capital/sections/Slider.tsx": $$$$$$$$13,
+    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$14,
+    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$15,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
