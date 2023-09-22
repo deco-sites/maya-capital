@@ -189,7 +189,14 @@ export default function Slider(props: SliderProps) {
                   {slide.description}
                 </p>
                 {slide.links && (
-                  <div class="flex flex-wrap items-center mt-[40px] py-[10px] transformCarouselText">
+                  <div
+                    class={`flex flex-wrap items-center mt-[40px] py-[10px] ${
+                      state.currentSlide === index
+                        ? "transformCarouselText"
+                        : ""
+                    }`}
+                    style={{ animationDelay: `${index * 0.2}s` }}
+                  >
                     <a
                       key={slide.links.url}
                       href={slide.links.url}
@@ -245,7 +252,7 @@ export default function Slider(props: SliderProps) {
           />
         </button>
       </div>
-      <div class="flex gap-x-[40px] absolute bottom-[60px] lg:left-[30%] md:pl-[90px] sm:pl-[35px] pl-[calc(100%-65%)]">
+      <div class="flex gap-x-[40px] sm:absolute relative sm:justify-left justify-center bottom-[60px] lg:left-[30%] md:pl-[90px] sm:pl-[50px]">
         {dots}
       </div>
     </div>
