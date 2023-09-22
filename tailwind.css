@@ -60,6 +60,14 @@
     animation: animationSlideText 1s ease-in-out forwards;
   }
 
+  .transformCarouselText {
+    animation: animationCarouselText 1s ease-in-out forwards;
+  }
+
+  .upBackground {
+    animation: animationBackground 1s ease-in-out forwards;
+  }
+
   @keyframes animationText {
     from {
       transform: translate3d(0px, 25px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -87,6 +95,33 @@
       opacity: 1;
     }
   }
+
+  @keyframes animationCarouselText {
+    from {
+      transform: translate3d(0px, -20px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 0;
+    }
+
+    to {
+      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      opacity: 1;
+    }
+  }
+
+  @keyframes animationBackground {
+    0% {
+      transform: translateY(0%);
+      background-color: #FEB13F;
+    }
+
+    100% {
+      transform: translateY(-100%);
+      background-color: #FEB13F;
+    }
+  }
+  
 
   .w-auto-100 {
     @media screen and (max-width: 638px) {
