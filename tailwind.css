@@ -134,6 +134,20 @@
       width: 80px;
     }
   }
+
+  .loading-line {
+    animation: loading 1s linear infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      left: -25%;
+    }
+
+    100% {
+      left: 25%;
+    }
+  }
 }
 
 @layer utilities {
