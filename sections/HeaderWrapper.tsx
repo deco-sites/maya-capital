@@ -46,15 +46,21 @@ export default function HeaderWrapper(props: HeaderWrapperProps) {
           class="lg:text-[80px] sm:text-[50px] text-[36px] font-semibold -ml-[5px] leading-[1.1em] lg:mt-[10px] lg:mb-[20px] my-[10px] transform3DText"
         />
         {props.links && (
-          <nav class="flex flex-wrap items-center mt-[40px] py-[10px] transform3DText">
+          <nav
+            class={`flex flex-wrap mt-[40px] py-[10px] transform3DText ${
+              props.links && props.links.some((link) => link.enableHover)
+                ? "items-center gap-x-[40px] gap-y-[20px]"
+                : "sm:gap-[20px] gap-[15px]"
+            }`}
+          >
             {props.links.map((link) => (
               <a
                 key={link.url}
                 href={link.url}
                 class={`${
                   link.enableHover
-                    ? `text-[#002fa7] text-[14px] hover:text-[#feb13f] hover:underline transition-all duration-300 mr-[40px] font-light`
-                    : "text-[#434343] sm:text-[16px] text-[12px] sm:mr-[20px] mr-[15px] font-semibold tracking-[2px] lg:mb-0 mb-[30px]"
+                    ? "text-[#002fa7] text-[14px] hover:text-[#feb13f] hover:underline transition-all duration-300 font-light"
+                    : "text-[#434343] sm:text-[16px] text-[12px] font-semibold tracking-[2px] lg:mb-0 mb-[30px]"
                 }`}
               >
                 {link.label}
