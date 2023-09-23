@@ -5,28 +5,30 @@
 import * as $$$$0 from "./routes/styles.css.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Animation.tsx";
-import * as $$$$$1 from "./islands/BlogCard.tsx";
-import * as $$$$$2 from "./islands/MenuButtonSideToSide.tsx";
-import * as $$$$$3 from "./islands/PortifolioCard.tsx";
-import * as $$$$$4 from "./islands/ScrollButton.tsx";
-import * as $$$$$5 from "./islands/Slider.tsx";
+import * as $$$$$1 from "./islands/Article.tsx";
+import * as $$$$$2 from "./islands/BlogCard.tsx";
+import * as $$$$$3 from "./islands/MenuButtonSideToSide.tsx";
+import * as $$$$$4 from "./islands/PortifolioCard.tsx";
+import * as $$$$$5 from "./islands/ScrollButton.tsx";
+import * as $$$$$6 from "./islands/Slider.tsx";
 import * as $$$$$$$$0 from "./sections/Approach.tsx";
-import * as $$$$$$$$1 from "./sections/BlogCard.tsx";
-import * as $$$$$$$$2 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$3 from "./sections/DreamBigger.tsx";
-import * as $$$$$$$$4 from "./sections/Footer.tsx";
-import * as $$$$$$$$5 from "./sections/Header.tsx";
-import * as $$$$$$$$6 from "./sections/HeaderWrapper.tsx";
-import * as $$$$$$$$7 from "./sections/Links.tsx";
-import * as $$$$$$$$8 from "./sections/OurBigDream.tsx";
-import * as $$$$$$$$9 from "./sections/OurTeam.tsx";
-import * as $$$$$$$$10 from "./sections/OurValues.tsx";
-import * as $$$$$$$$11 from "./sections/PortfolioCareers.tsx";
-import * as $$$$$$$$12 from "./sections/PortfolioItem.tsx";
-import * as $$$$$$$$13 from "./sections/Portifolio.tsx";
-import * as $$$$$$$$14 from "./sections/Slider.tsx";
-import * as $$$$$$$$15 from "./sections/Theme.tsx";
-import * as $$$$$$$$16 from "./sections/Transformative.tsx";
+import * as $$$$$$$$1 from "./sections/Article.tsx";
+import * as $$$$$$$$2 from "./sections/BlogCard.tsx";
+import * as $$$$$$$$3 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$4 from "./sections/DreamBigger.tsx";
+import * as $$$$$$$$5 from "./sections/Footer.tsx";
+import * as $$$$$$$$6 from "./sections/Header.tsx";
+import * as $$$$$$$$7 from "./sections/HeaderWrapper.tsx";
+import * as $$$$$$$$8 from "./sections/Links.tsx";
+import * as $$$$$$$$9 from "./sections/OurBigDream.tsx";
+import * as $$$$$$$$10 from "./sections/OurTeam.tsx";
+import * as $$$$$$$$11 from "./sections/OurValues.tsx";
+import * as $$$$$$$$12 from "./sections/PortfolioCareers.tsx";
+import * as $$$$$$$$13 from "./sections/PortfolioItem.tsx";
+import * as $$$$$$$$14 from "./sections/Portifolio.tsx";
+import * as $$$$$$$$15 from "./sections/Slider.tsx";
+import * as $$$$$$$$16 from "./sections/Theme.tsx";
+import * as $$$$$$$$17 from "./sections/Transformative.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -198,11 +200,12 @@ const manifest = {
   },
   "islands": {
     "./islands/Animation.tsx": $$$$$0,
-    "./islands/BlogCard.tsx": $$$$$1,
-    "./islands/MenuButtonSideToSide.tsx": $$$$$2,
-    "./islands/PortifolioCard.tsx": $$$$$3,
-    "./islands/ScrollButton.tsx": $$$$$4,
-    "./islands/Slider.tsx": $$$$$5,
+    "./islands/Article.tsx": $$$$$1,
+    "./islands/BlogCard.tsx": $$$$$2,
+    "./islands/MenuButtonSideToSide.tsx": $$$$$3,
+    "./islands/PortifolioCard.tsx": $$$$$4,
+    "./islands/ScrollButton.tsx": $$$$$5,
+    "./islands/Slider.tsx": $$$$$6,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
@@ -211,22 +214,23 @@ const manifest = {
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
     "deco-sites/maya-capital/sections/Approach.tsx": $$$$$$$$0,
-    "deco-sites/maya-capital/sections/BlogCard.tsx": $$$$$$$$1,
-    "deco-sites/maya-capital/sections/ContactUs.tsx": $$$$$$$$2,
-    "deco-sites/maya-capital/sections/DreamBigger.tsx": $$$$$$$$3,
-    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$4,
-    "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$5,
-    "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$6,
-    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$7,
-    "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$8,
-    "deco-sites/maya-capital/sections/OurTeam.tsx": $$$$$$$$9,
-    "deco-sites/maya-capital/sections/OurValues.tsx": $$$$$$$$10,
-    "deco-sites/maya-capital/sections/PortfolioCareers.tsx": $$$$$$$$11,
-    "deco-sites/maya-capital/sections/PortfolioItem.tsx": $$$$$$$$12,
-    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$13,
-    "deco-sites/maya-capital/sections/Slider.tsx": $$$$$$$$14,
-    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$15,
-    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$16,
+    "deco-sites/maya-capital/sections/Article.tsx": $$$$$$$$1,
+    "deco-sites/maya-capital/sections/BlogCard.tsx": $$$$$$$$2,
+    "deco-sites/maya-capital/sections/ContactUs.tsx": $$$$$$$$3,
+    "deco-sites/maya-capital/sections/DreamBigger.tsx": $$$$$$$$4,
+    "deco-sites/maya-capital/sections/Footer.tsx": $$$$$$$$5,
+    "deco-sites/maya-capital/sections/Header.tsx": $$$$$$$$6,
+    "deco-sites/maya-capital/sections/HeaderWrapper.tsx": $$$$$$$$7,
+    "deco-sites/maya-capital/sections/Links.tsx": $$$$$$$$8,
+    "deco-sites/maya-capital/sections/OurBigDream.tsx": $$$$$$$$9,
+    "deco-sites/maya-capital/sections/OurTeam.tsx": $$$$$$$$10,
+    "deco-sites/maya-capital/sections/OurValues.tsx": $$$$$$$$11,
+    "deco-sites/maya-capital/sections/PortfolioCareers.tsx": $$$$$$$$12,
+    "deco-sites/maya-capital/sections/PortfolioItem.tsx": $$$$$$$$13,
+    "deco-sites/maya-capital/sections/Portifolio.tsx": $$$$$$$$14,
+    "deco-sites/maya-capital/sections/Slider.tsx": $$$$$$$$15,
+    "deco-sites/maya-capital/sections/Theme.tsx": $$$$$$$$16,
+    "deco-sites/maya-capital/sections/Transformative.tsx": $$$$$$$$17,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
