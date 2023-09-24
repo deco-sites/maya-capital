@@ -8,9 +8,11 @@ export interface Props {
   morePortifolioHref?: string;
 }
 
+/** @title {{label}} */
 export interface CardInfo {
   website?: string;
   image?: LiveImage;
+  label?: string;
   description?: string;
   founder?: string;
   sector?: string;
@@ -55,6 +57,7 @@ export default function Portifolio(props: Props) {
               website={item?.website}
               sector={item?.sector}
               coinvestors={item?.coinvestors}
+              label={item?.label}
             />
           );
         })}
