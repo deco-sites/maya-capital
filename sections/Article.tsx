@@ -65,16 +65,18 @@ export default function Article(props: ArticleProps) {
         <p class="lg:text-[21px] text-[18px] text-center italic max-w-[770px] mx-auto leading-[1.6em] text-[#333]">
           {props.description}
         </p>
-        <div class="flex items-center sm:mx-auto mt-[70px]">
-          <Image
-            src={props.icon || ""}
-            class="w-[38px] h-[38px] mr-[10px]"
-            width={38}
-            height={36}
-            alt={props.date}
-          />
-          <p class="text-[#838383] text-[16px]">{props.date}</p>
-        </div>
+        {props.date && (
+          <div class="flex items-center sm:mx-auto mt-[70px]">
+            <Image
+              src={props.icon || ""}
+              class="w-[38px] h-[38px] mr-[10px]"
+              width={38}
+              height={36}
+              alt={props.date}
+            />
+            <p class="text-[#838383] text-[16px]">{props.date}</p>
+          </div>
+        )}
         <div class="mx-auto sm:pt-[70px] pt-[35px]">
           <HTMLRenderer
             html={props.article}
