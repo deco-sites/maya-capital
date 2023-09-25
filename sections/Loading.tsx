@@ -30,7 +30,7 @@ export default function Loading(props: Props) {
 
   if (loading) {
     return (
-      <section class="bg-white w-full h-full fixed top-0 left-0 flex items-center justify-center z-50 overflow-hidden">
+      <section class="bg-white w-full h-full fixed top-0 left-0 flex flex-col items-center justify-center z-50 overflow-hidden">
         <figure class="-top-[50px] relative">
           <Image
             src={props.preloader || ""}
@@ -40,7 +40,8 @@ export default function Loading(props: Props) {
             alt={props.alt}
           />
         </figure>
-        <span class="loading-line w-[100px] h-[4px] bg-[#FEB13F] relative"></span>
+        <span class="loading-line w-[100px] h-[4px] bg-[#FEB13F] relative">
+        </span>
       </section>
     );
   }
