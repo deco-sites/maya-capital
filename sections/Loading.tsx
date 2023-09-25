@@ -14,7 +14,7 @@ export default function Loading(props: Props) {
     const handleLoad = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 500);
     };
 
     if (document.readyState === "complete") {
