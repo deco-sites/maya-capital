@@ -13,9 +13,13 @@ export interface CardInfo {
   website?: string;
   image?: LiveImage;
   label?: string;
+  /** @format textarea */
   description?: string;
+  /** @format textarea */
   founder?: string;
+  /** @format textarea */
   sector?: string;
+  /** @format textarea */
   coinvestors?: string;
 }
 

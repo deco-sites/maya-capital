@@ -4,11 +4,13 @@ import Animation from "../islands/Animation.tsx";
 export interface Props {
   subTitle?: string;
   title?: string;
+  link?: string;
+  /** @format textarea */
   description?: string;
 }
 
 export default function Approach(props: Props) {
-  const { subTitle, title, description } = props;
+  const { subTitle, title, description, link } = props;
 
   return (
     <section
@@ -40,7 +42,7 @@ export default function Approach(props: Props) {
       <Animation />
 
       <a
-        href={`https://www.maya.capital/approach`}
+        href={link}
         className={`mt-[35px] lg:mt-[95px] flex gap-[20px] items-center`}
       >
         <p
