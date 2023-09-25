@@ -35,7 +35,7 @@ export default function PortifolioCard(props: CardInfo) {
           <div
             className={`cursor-pointer justify-between relative px-[15px] mb-[40px] flex `}
           >
-            <Image src={image || ``} width={100} className={`lg:w-[230px]`} />
+            <Image src={image || ``} width={100} className={`lg:max-w-[230px] max-h-[150px] object-contain`} />
             <Image
               className={`absolute top-[-45px] right-[0px]`}
               src={`https://uploads-ssl.webflow.com/5ca9b45ad636b789185d2595/5cab6e021aed369c9b738cb4_modal-close-button.png `}
