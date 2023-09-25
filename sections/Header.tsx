@@ -16,12 +16,14 @@ export default function Header(props: headerProps) {
       className={`flex items-center flex-row py-[14px] xl:px-[114px] justify-between bg-[#F9FAFC] px-[21px] relative z-10`}
     >
       <div className={``}>
-        <Image
-          src={props?.image || ""}
-          width={80}
-          height={34}
-          className={``}
-        />
+        <a href="/">
+          <Image
+            src={props?.image || ""}
+            width={80}
+            height={34}
+            className={``}
+          />
+        </a>
       </div>
       <div className={``}>
         <MenuButtonSideToSide linkList={props?.linkList} image={props?.image} />
