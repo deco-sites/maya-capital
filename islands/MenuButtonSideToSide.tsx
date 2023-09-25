@@ -52,19 +52,21 @@ export default function MenuButtonSideToSide(props: headerProps) {
                   <div
                     className={`w-full xl:w-[31%] xl:p-[35px] px-[24px] py-[35px] h-full flex flex-col`}
                   >
-                    <Image
-                      src={image || ""}
-                      width={80}
-                      height={34}
-                      alt={""}
-                    />
+                    <a href="/">
+                      <Image
+                        src={image || ""}
+                        width={80}
+                        height={34}
+                        alt={""}
+                      />
+                    </a>
                     <div className={`w-full border-b-1 xl:my-[60px] my-[30px]`}>
                     </div>
                     {linkList?.map((link, index) => {
                       return (
                         <div
                           key={index}
-                          className={`text-[#002fa7] mb-[12px] py-[6px] xl:mb-[35px] text-[18px]`}
+                          className={`text-[#002fa7] hover:text-[#FEB13F] mb-[12px] py-[6px] xl:mb-[35px] text-[18px]`}
                         >
                           <a href={link?.link}>{link?.title}</a>
                         </div>
